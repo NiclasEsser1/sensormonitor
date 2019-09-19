@@ -1,4 +1,4 @@
-	
+
       <!-- Page Heading/Breadcrumbs -->
       <div class="row">
         <div class="col-lg-12">
@@ -11,7 +11,7 @@
             <li class="active">Visualize Data</li>
           </ol>
         </div>
-      </div> 
+      </div>
       <!-- table to select different Nodes -->
 <form id="nodes" type="POST" action="">
 	<input type="hidden" name="nodeformsend" value="true">
@@ -25,11 +25,11 @@
 	        <div class="col-md">
 	          <select class="form-control" id="location" name="location" title="Choosing one Wireless Sensor Node takes effect to all shown Elements">
 	          <?php for($i = 1; $i <= $numberNodes; $i++) : ?>
-	              <option  name="location[<?php echo $i ?>]" value="Node<?php echo $i ?>">Wireless Sensor Node <?php echo $i ?></option>
+	              <option  name="location[<?php echo $i ?>]" value="<?php echo $i ?>">Wireless Sensor Node <?php echo $i ?></option>
 	          <?php endfor; ?>
 	          </select>
-	        </div> 
-	      </div> 
+	        </div>
+	      </div>
 	    </div>
 	  </div>
 	  <div class="row equal">
@@ -75,7 +75,7 @@
 	</br>
 
 	<div class="row">
-		
+
 		<!-- table to select different parameters -->
 		<div class="col col-md-6">
 			<div class="panel panel-default panel-custom text-center">
@@ -103,7 +103,7 @@
 					<input class="form-control" name="datetimeend" type="text" title="Selecting an Endtime takes effect to Max & Min Table and Chart">
 				</div>
 			</div>
-		
+
 		</div>
 	</div>
 	<button class="btn btn-primary btn-block" type="button" id="submitdate" title="Press button if you already choosed a timeinterval">Confirm your selected Timeinterval</button>

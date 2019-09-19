@@ -145,7 +145,7 @@ function currentGauge( currentdata ) {
 
 	  var gCharge = new JustGage({
 		id: "jg2",
-		value: (currentdata.voltage/1.7)*100,
+		value: (currentdata.voltage/3.2)*100,
 		min: 0,
 		max: 100,
 		title: parameters[1],
@@ -164,8 +164,8 @@ function currentGauge( currentdata ) {
 	  var gTemperature = new JustGage({
 		id: "jg4",
 		value: currentdata.temperature,
-		min: -20,
-		max: 50,
+		min: -30,
+		max: 70,
 		title: parameters[3],
 		label: " [C°]"
 	  });
